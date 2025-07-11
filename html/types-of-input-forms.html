@@ -9,7 +9,7 @@
     <h1>BIO-DATA FORM</h1>
     <br><br>
 
-    <form action="https://www.youtube.com/results">
+    <form action="action.php">
 
     <label for="name">Enter your username: </label>
     <input id="name" type="text" placeholder="Enter your username">
@@ -32,13 +32,52 @@
 
     <br><br>
 
-   
-        <label for="searchHere">Search for your favourite video: </label>
-        <input id="searchHere" type="text" name="search_query"/>
-       
+  
+    <p>Select your favourite cakes:</p>
+    <label for="red">Red Velvet</label>
+    <input type="checkbox" id="red" name="cake" value="redVelvet">
+    <label for="black">black forest</label>
+    <input type="checkbox" id="black" name="cake" value="blackForest">
+    <label for="cheese">Cheese Cake</label>
+    <input type="checkbox" id="cheese" name="cake" value="Cheese Cake">
+        <label for="chocolate">Death By Chocolate</label>
+    <input type="checkbox" id="chocolate" name="chocolate" value="Death by chocolate">
+
     <br><br>
 
-    
+    <p>Select your toppings</p>
+
+    <input type="radio" id="whipCream" name="topping" value="whipped Cream">
+    <label for="whipCream">Whipped Cream</label>
+
+        <input type="radio" id="Cherries" name="topping" value="Cherries">
+    <label for="Cherries">Cherries</label>
+
+    <input type="radio" id="cshave" name="topping" value="cshavings">
+    <label for="cshave">Chocolate Shavings</label>
+
+    <input type="radio" id="FreshFruits" name="topping" value="Fresh Fruits">
+    <label for="FreshFruits">FreshFruits</label>
+    <input type="radio" id="Nuts" name="topping" value="Nuts">
+    <label for="Nuts">Nuts</label>
+  
+       
+       
+    <br><br>
+ 
+    <label for="pets"> Select your favourite pet: </label> 
+    <select name="pet" id="pets" >
+        <option value="" disabled selected>Select here</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Hamster">Hamster</option>
+        <option value="Parrot">Parrot</option>
+    </select>
+
+    <br><br>
+
+    <label for="spice">What is your spice tolerance level from 0 to 100: </label>
+    <input type="range" min="0" max="100" value="50" name="spice" step="2">
 
     <br><br>
 
@@ -49,14 +88,24 @@
     <br><br>
     <input type="Submit"/>
 
-
+<br><br><br>
     </form>
 
 <form action="https://www.google.com/search">
-    <label for="google">Search any topic to google: </label>
+    <label for="google">Search any topic on google: </label>
     <input id="google" type="text" name="q"/>
     <input type="submit">
     </form>
+
+    <br><br>
+
+    <form action="https://www.youtube.com/results">
+     <label for="searchHere">Search for your favourite video on youtube: </label>
+        <input id="searchHere" type="text" name="search_query"/>
+    <input type="submit"/>
+    </form>
+
+
     
 </body>
 </html>
