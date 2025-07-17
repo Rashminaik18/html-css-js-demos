@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Transform</title>
+    <style>
+            div
+            {
+                height:100px;
+                width:200px;
+                margin:100px;
+               
+            
+            }
+            #rotation
+            {
+             
+                background-color: aqua;
+                transform:rotate(45deg);
+            }
+            #scale1
+            {
+                background-color: #5f2a9156;
+                transform:scale(1.5);
+                margin-bottom: 20%;
+
+            }
+            #scale2
+            {
+                background-color: pink;
+                transform:scale(1.5,3);
+              
+            }
+            #translate
+            {
+                background-color: brown;
+                transform:translate(200px,100px);
+            }
+
+            #skew
+            {
+                background-color: rgba(98, 146, 49, 0.699);
+                margin-top:150px;
+                transform:skew(0deg,30deg);
+            }
+
+
+    </style>
+</head>
+<body>
+    <div id="rotation">This is an example of rotaion and this div is rotated by 45 degrees</div>
+    <div id="scale1">This is an example of scale and it is being scale 1.5 times the original size</div>
+    <div id="scale2">This is an example of scale and its being scaled 1.5 times along x axis and 3 times along y axis with respect to the original size</div>
+    <div id="translate">This div is 200px and 100px away along its x and y axis with respect to its origin</div>
+    <div id="skew">This div is skewed 10 degree along x and 30 degree along y axis</div>
+</body>
+</html>

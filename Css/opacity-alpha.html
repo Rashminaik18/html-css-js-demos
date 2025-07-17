@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity and alpha Channel</title>
+    <style>
+        div{
+            height:100px;
+            width:100%;
+            border:2px solid black;
+            margin:10px;
+            text-align:center;
+            padding:20px;
+        }
+        #alpha1
+        {
+            background-color: rgba(0, 255, 128, 0.651);
+        }
+        #alpha2
+        {
+            background-color:#97434375;
+        }
+        #opacity
+        {
+            background-color: blueviolet;
+            opacity:0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="alpha1">
+     Hey its Rashmi. This has opacity set using rgba value    
+    </div>
+    <div id="alpha2">
+        Hey its Rashmi.This has opacity set using hex code
+        </div>
+    <div id="opacity">
+        Hey its Rashmi. This has alpha value set to 0.5 and you can see that all the elments including the background color has gone opaque.
+    </div>
+  
+</body>
+</html>
