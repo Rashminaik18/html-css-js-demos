@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer
+        {
+            height:500px;
+            width:30%;
+            display:flex;
+            flex-direction: column-reverse;
+            border:5px solid black;
+           
+        }
+
+        .outer div{
+            height:50px;
+            width:100px;
+        }
+        #bx1
+        {
+            justify-content:flex-start;
+        }
+        #bx2
+        {
+            justify-content:flex-end;
+        }
+        #bx3
+        {
+            justify-content:center;
+        }
+        #bx4
+        {
+            justify-content:space-between ;
+        }
+        #bx5
+        {
+            justify-content: space-around;
+        }
+        #bx6
+        {
+            justify-content:space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLEX-START</h1>
+    <div class="outer" id="bx1">
+        <div style="background-color: aqua;"> box1</div>
+        <div style="background-color: rgb(70, 128, 128);">box2</div>
+        <div style="background-color: rgb(18, 54, 54);">box3</div>
+        <div style="background-color: rgb(215, 243, 243);">box4</div>
+    </div>
+    <br>
+    <h2>FLEX-END</h2>
+
+    <div class="outer" id="bx2">
+        <div style="background-color: red;">box1</div>
+        <div style="background-color: rgb(156, 52, 52);">box2</div>
+        <div style="background-color: rgb(231, 119, 119);">box3</div>
+        <div style="background-color: rgb(110, 80, 80);">box4</div>
+    </div>
+
+    <br>
+    <h1>CENTER</h1>
+
+    <div class="outer"  id="bx3">
+        <div style="background-color: violet;">box1</div>
+        <div style="background-color: rgb(119, 48, 119);">box2</div>
+        <div style="background-color: rgb(59, 9, 59);">box3</div>
+        <div style="background-color: rgb(99, 40, 59);">box4</div>
+    </div>
+    <br>
+    <h1>SPACE-BETWEEN</h1>
+    <div  class="outer" id="bx4">
+        <div style="background-color: yellow;">box1</div>
+        <div style="background-color:yellowgreen">box2</div>
+        <div style="background-color: rgb(167, 167, 24);">box3</div>
+        <div style="background-color: rgb(124, 124, 9);">box4</div>
+    </div>
+    <br>
+
+    <h1>SPACE-AROUND</h1>
+    <div class="outer" id="bx5">
+        <div style="background-color: aqua;"> box1</div>
+        <div style="background-color: rgb(70, 128, 128);">box2</div>
+        <div style="background-color: rgb(18, 54, 54);">box3</div>
+        <div style="background-color: rgb(215, 243, 243);">box4</div>
+    </div>
+    <br>
+
+    <h1>SPACE-EVENLY</h1>
+    <div class="outer" id="bx6">
+        <div style="background-color: aqua;"> box1</div>
+        <div style="background-color: rgb(70, 128, 128);">box2</div>
+        <div style="background-color: rgb(18, 54, 54);">box3</div>
+        <div style="background-color: rgb(215, 243, 243);">box4</div>
+    </div>
+    <br>
+</body>
+</html>

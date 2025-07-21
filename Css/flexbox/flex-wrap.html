@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap Demonstration</title>
+    <style>
+        .outer
+        {
+            display:flex;
+            flex-direction: row;
+            height:500px;
+            width:80%;
+            border:5px solid black;
+          
+
+        }
+        .outer>div{
+            height:100px;
+            width:30%;
+            
+        }
+        #bx1
+        {
+            flex-wrap:wrap;
+        }
+        #bx2
+        {
+         flex-wrap: nowrap;   
+        }
+        #bx3
+        {
+          
+            flex-wrap:wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>wrap</h1>
+    <div class="outer" id="bx1">
+        <div style="background-color: aqua;"> box1</div>
+        <div style="background-color: rgb(70, 128, 128);">box2</div>
+        <div style="background-color: rgb(18, 54, 54);">box3</div>
+        <div style="background-color: rgb(215, 243, 243);">box4</div>
+    </div>
+    <br>
+    <h2>no-wrap</h2>
+
+    <div class="outer" id="bx2">
+        <div style="background-color: red;">box1</div>
+        <div style="background-color: rgb(156, 52, 52);">box2</div>
+        <div style="background-color: rgb(231, 119, 119);">box3</div>
+        <div style="background-color: rgb(110, 80, 80);">box4</div>
+    </div>
+
+    <br>
+    <h1>wrap reverse</h1>
+
+    <div class="outer"  id="bx3">
+        <div style="background-color: violet;">box1</div>
+        <div style="background-color: rgb(119, 48, 119);">box2</div>
+        <div style="background-color: rgb(59, 9, 59);">box3</div>
+        <div style="background-color: rgb(99, 40, 59);">box4</div>
+    </div>
+    <br>
+    
+   
+</body>
+</html>
